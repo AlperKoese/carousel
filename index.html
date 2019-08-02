@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+<div class="bildergalerie">
+
+<div class="carousel fade">
+  <div class="nummerierung">1 / 3</div>
+  <img src="image_1.jpeg" style="width:33%; height:250px; float:left;border:3px solid:red;">
+  <img src="image_2.jpeg" style="width:33%; height:250px; float:left;border:3px solid:white;" >
+  <img src="image_3.jpeg" style="width:33%; height:250px; float:left;border:3px solid:yellow;">
+</div>
+
+<div class="carousel fade">
+  <div class="nummerierung">2 / 3</div>
+  <img src="image_4.jpeg" style="width:33%; height:250px;float:left;">
+  <img src="image_5.jpeg" style="width:33%; height:250px;float:left;">
+  <img src="image_6.jpeg" style="width:33%; height:250px;float:left;">
+</div>
+
+<div class="carousel fade">
+  <div class="nummerierung">3 / 3</div>
+  <img src="image_7.jpeg" style="width:33%;height:250px;float:left;">
+  <img src="image_8.jpeg" style="width:33%; height:250px;float:left;">
+  <img src="image_9.jpeg" style="width:33%; height:250px;float:left;">
+</div>
+
+<a class="minus" onclick="neueBilder(-1)">&#10094;</a>
+<a class="plus" onclick="neueBilder(1)">&#10095;</a>
+
+</div>
+<br style="clear:both">
+
+<div style="text-align:center">
+  <span class="punkt" onclick="aktuelleBilder(1)"></span> 
+  <span class="punkt" onclick="aktuelleBilder(2)"></span> 
+  <span class="punkt" onclick="aktuelleBilder(3)"></span> 
+</div>
+
+<script>
+    zeigtFolien(folieIndex);
+</script>
+
+
+</body>
+</html> 
